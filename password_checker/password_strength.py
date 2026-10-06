@@ -7,7 +7,9 @@ import requests
 from getpass import getpass
 
 # HIBP-integrated v1:
-# added 
+# added HIBP breach detection and secure password input
+# fixed formatting stuff
+#error handling 
 
 # Password Strength Evaluator Tool
 # Author @ethan-j44
