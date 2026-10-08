@@ -62,7 +62,7 @@ The program performs several independent checks on the password.
                        │
                        ▼
               Strength + Feedback
-
+```
 ## Acknowledgements
 
 I used the following sources and research to implement this project:
