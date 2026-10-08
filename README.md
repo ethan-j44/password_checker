@@ -13,5 +13,6 @@ I used the following sources and research to implement this project:
  - [Microsoft: Create and use strong passwords](https://support.microsoft.com/en-us/windows/create-and-use-strong-passwords-c5cebb49-8c53-4f5e-2bc4-fe357ca048eb)
  - [National Institute of Standards and Technology: Strength of Passwords](https://pages.nist.gov/800-63-4/sp800-63b/passwords/)
  - [Komanduri S, Shay R, Kelley PG, Mazurek ML, Bauer L, Christin N, Cranor LF, Egelman S (2011) Of Passwords and People: Measuring the Effect of Password-Composition Policies. Proceedings of the SIGCHI Conference on Human Factors in Computing Systems (ACM, New York, NY), pp 2595–2604.](https://www.ece.cmu.edu/~lbauer/papers/2011/chi2011-passwords.pdf)
+ - [Have I been Pwned: API Documentation](https://haveibeenpwned.com/API/V3)
 
 
