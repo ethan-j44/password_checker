@@ -1,6 +1,67 @@
+# Password Security Checker
+A Python-based password security analyzer that evaluates password strength, detects common weaknesses and patterns, estimates entropy, and checks whether a password has appeared in known data breaches using the Have I Been Pwned (HIBP) Pwned Passwords API.
 
-# Password Checker
-Made by Ethan to learn about the process of secure password creation and evaluation.
+The project was developed to explore practical password-security concepts including password entropy, pattern detection, breach exposure, API security, and privacy-preserving authentication practices.
+
+## Features
+- **Password strength scoring**
+  - Rates passwords on a 0–10 scale
+  - Provides a corresponding strength classification
+
+- **Password entropy estimation**
+  - Estimates entropy based on the character sets used
+  - Considers lowercase, uppercase, numeric, and special characters
+
+- **Common password detection**
+  - Compares passwords against a dataset of commonly used passwords
+  - Uses a locally stored password dataset rather than transmitting passwords to a third-party service
+
+- **Pattern detection**
+  - Detects years and common date formats
+  - Detects repeated characters
+  - Detects repeated character sequences
+
+- **Have I Been Pwned integration**
+  - Checks whether a password has appeared in known data breaches
+  - Reports the number of times a password has been observed
+  - Uses the HIBP Pwned Passwords API's k-anonymity model
+
+- **Secure password input**
+  - Uses Python's `getpass` module so passwords are not displayed while being entered
+
+- **Error handling**
+  - Handles missing datasets
+  - Handles network and API failures
+  - Uses a request timeout to prevent the program from hanging indefinitely
+
+## How It Works
+
+The program performs several independent checks on the password.
+
+```text
+                    Password
+                        │
+                        ▼
+              ┌─────────────────┐
+              │ Input Validation │
+              └────────┬────────┘
+                       │
+          ┌────────────┼────────────┐
+          ▼            ▼            ▼
+      Password      Pattern      Entropy
+      Dataset       Analysis     Analysis
+      Check
+          │            │            │
+          └────────────┼────────────┘
+                       │
+                       ▼
+              HIBP Breach Check
+                       │
+                       ▼
+               Risk Assessment
+                       │
+                       ▼
+              Strength + Feedback
 
 ## Acknowledgements
 
